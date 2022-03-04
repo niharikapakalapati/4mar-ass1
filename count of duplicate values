@@ -1,0 +1,12 @@
+def count_duplicates2(seq):
+    counter = 0
+    seen = set()
+    for elm in seq:
+        if elm in seen:
+            counter += 1
+        else:
+            seen.add(elm)
+    return counter
+
+res = count_duplicates2([1,2,1,4])
+print(res)  
